@@ -50,7 +50,7 @@ See note.jpg
 2. Create a while loop that slides through the array
     * If the next number is 1 (`nums[right+1]==1`), then expand the window and increase the result by 1
     * If the next number is 0 (`nums[right+1]==0`) and we still have zeros to flip (`k>0`), expand the window and increase the result by 1
-    * If the next number is 0 (`nums[right+1]==0`) and we DON'T have zeros to flip (`k<=0`), we move the left pointer by one step, increase `k` by one, and decrease the result by 1
+    * If the next number is 0 (`nums[right+1]==0`) and we DON'T have zeros to flip (`k<=0`), we move the left pointer by one step, increase `k` by one as we encounter a zero, and decrease the result by 1
 
 ### Implement
 > - Implement the solution (make sure to know what level of detail the interviewer wants)
