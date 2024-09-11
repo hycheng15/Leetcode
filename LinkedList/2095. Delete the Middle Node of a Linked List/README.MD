@@ -2,7 +2,7 @@
 
 🔗 Link: [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/)<br>
 💡 Difficulty: Medium<br>
-🛠️ Topics: <br>
+🛠️ Topics: Linked List, Two Pointers<br>
 
 ## Question
 
