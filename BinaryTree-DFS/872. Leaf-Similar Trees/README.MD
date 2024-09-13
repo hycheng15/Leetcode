@@ -2,7 +2,7 @@
 
 🔗 Link: [Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/description/)<br>
 💡 Difficulty: Easy<br>
-🛠️ Topics: <br>
+🛠️ Topics: Tree, Depth-First Search, Binary Tree<br>
 
 ## Question
 
@@ -50,10 +50,15 @@ Output: false
 > - Sketch visualizations and write pseudocode
 > - Walk through a high level implementation with an existing diagram
 
+1. Using DFS (recursion), for a node, if it has no left child and right child, then it is a leaf: push it back to the vector
+2. Check left first - if a node has a left child, do the recursion
+3. Check right - if a node has a right child, do the recursion
+4. Compare the vector, i.e., the leaves of the two trees.
+
 ### Implement
 > - Implement the solution (make sure to know what level of detail the interviewer wants)
 
-See xxxx-solution.cpp
+See 872-solution.cpp
 
 ### Review
 > - Re-check that your algorithm solves the problem by running through important examples
@@ -65,4 +70,8 @@ See xxxx-solution.cpp
 
 #### Time Complexity
 
+`O(n)`
+
 #### Space Complexity
+
+`O(n)`
