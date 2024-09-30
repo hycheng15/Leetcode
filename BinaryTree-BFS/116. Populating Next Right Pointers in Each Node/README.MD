@@ -2,7 +2,7 @@
 
 🔗 Link: [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/)<br>
 💡 Difficulty: Medium<br>
-🛠️ Topics: <br>
+🛠️ Topics: Linked List, Tree, Depth-First Search, Breadth-First Search, Binary Tree<br>
 
 ## Question
 
