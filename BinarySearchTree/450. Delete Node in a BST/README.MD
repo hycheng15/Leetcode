@@ -65,10 +65,22 @@ Could you solve it with time complexity O(height of tree)?
 > - Sketch visualizations and write pseudocode
 > - Walk through a high level implementation with an existing diagram
 
+https://youtu.be/LFzAoJJt92M
+
+As we found the node to be deleted, there are three cases:
+1. The node does not have any leaf
+    * We simply delete the node by returning a nullptr
+2. The node has either one left child or one right child
+    * We simply delete the node and return the child
+3. The node has two children
+    * We find the child with smallest value that is larger than key. I.e., the leftmost leaf on the right subtree. Then substitute its value with the node and delete it
+
+When calling `deleteNode()`, be remember to catch its return value (updating root->right or root->left)
+
 ### Implement
 > - Implement the solution (make sure to know what level of detail the interviewer wants)
 
-See xxxx-solution.cpp
+See 450-solution.cpp
 
 ### Review
 > - Re-check that your algorithm solves the problem by running through important examples
@@ -80,4 +92,8 @@ See xxxx-solution.cpp
 
 #### Time Complexity
 
+`O(logn)`, where `logn` is the height of the tree
+
 #### Space Complexity
+
+Since we have recursive call, the call stack will introduce `O(logn)` space
