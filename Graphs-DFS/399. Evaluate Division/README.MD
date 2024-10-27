@@ -65,6 +65,8 @@ Output: [0.50000,2.00000,-1.00000,-1.00000]
 > - Sketch visualizations and write pseudocode
 > - Walk through a high level implementation with an existing diagram
 
+See note.png
+
 1. Made each variable a node, forward edge to have weight "value" and backward edge to have weight "1/value"
 2. Start from node `Ci`, do a DFS to check whether we can reach `Di`, multiply all the weight in the path to get the answer
     * Be aware of the termination condition of DFS, also how we bookkeeping during DFS
