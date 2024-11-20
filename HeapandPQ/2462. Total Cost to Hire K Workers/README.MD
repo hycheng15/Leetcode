@@ -61,10 +61,17 @@ The total hiring cost is 4.
 > - Sketch visualizations and write pseudocode
 > - Walk through a high level implementation with an existing diagram
 
+1. Maintain two priority queues `left` and `right`, and two pointers `left_pos` and `right_pos`.
+    * `left_pos` and `right_pos` means the index of the next element that may be added to pq
+2. Keep the size of the two pqs to be `candidate` as long as `left_pos <= right_pos`
+    * Be careful, here we use **<=** because the element pointed by the position has not yet been added to the pq
+3. Get the top of the pqs if `pq.size() > 0`, else set `left_small` or `right_small` to `INT_MAX`
+4. Check which is smaller, then pop and continue the steps
+
 ### Implement
 > - Implement the solution (make sure to know what level of detail the interviewer wants)
 
-See xxxx-solution.cpp
+See 2462-solution.cpp
 
 ### Review
 > - Re-check that your algorithm solves the problem by running through important examples
