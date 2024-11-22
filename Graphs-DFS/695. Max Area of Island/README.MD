@@ -49,7 +49,7 @@ Output: 0
 
 1. Use DFS to explore the graph
 2. Once we meet a `1` (island), use the `dfs` function to mark visited to `true` and check all its neighbors and keeps incrementing the area we can form (pass by reference)
-3. After we finish current dfs, update the largest_area
+3. After we finish current dfs, update the `largest_area`
 
 ### Implement
 > - Implement the solution (make sure to know what level of detail the interviewer wants)
